@@ -1,0 +1,79 @@
+.content{
+  &>div{
+    height: 100%;
+    overflow-y: auto;
+  }
+  .search-form{
+    .el-form-item{
+      margin-bottom: 10px;
+      .el-input{
+        width: 215px;
+      }
+    }
+  }
+  .table-container {
+    .table-cont{
+      margin-top: 10px;
+      .el-table{
+        &::before{
+          height: 0;
+        }
+        td, th{
+          padding: 6px 0;
+        }
+        .el-table__empty-block{
+          border-bottom: 1px solid #EBEEF5;
+        }
+      }
+      .table-pagination{
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  .submit-form{
+    .el-form-item{
+      margin-bottom: 12px;
+      .el-form-item__error{
+        padding-top: 0;
+        white-space: nowrap;
+      }
+      .el-form-item__content{
+        margin-right: 20px;
+        min-width: 180px;
+        max-width: 280px;
+        .el-select,.el-date-editor.el-input{
+          width: 100%;
+        }
+      }
+      .el-tree{
+        max-height: 260px;
+        min-width: 240px;
+        overflow-y: auto;
+        .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+          background-color: #3876d6;
+          border-color: #3876d6;
+        }
+      }
+    }
+  }
+}
+
+// element全局修改
+.el-button--primary {
+  color: #FFF;
+  background-color: #3876d6;
+  border-color: #3876d6;
+}
+.el-button--primary:focus, .el-button--primary:hover{
+  background: rgb(96, 145, 222);
+  border-color: rgb(96, 145, 222);
+}
+.el-button--text, .el-menu-item.is-active, .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover,
+.el-breadcrumb__inner a:hover, .el-breadcrumb__inner.is-link:hover, .el-pager li.active,.el-pager li:hover, .el-pagination button:hover,
+.el-select-dropdown__item.selected, .el-button--text:focus{
+  color: #3876d6;
+}
+.el-select .el-input.is-focus .el-input__inner{
+  border-color: #3876d6;
+}
